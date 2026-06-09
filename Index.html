@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Gentleman's Code – John Bento</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+ 
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">John Bento</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About the Author</a></li>
+    <li><a href="#story">The Story</a></li>
+    <li><a href="#updates">News &amp; Updates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+ 
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-img">
+    <!-- Replace the src below with your actual background photo -->
+    <img src="hero-bg.jpg" alt="Moody harbor at dusk" class="hero-photo" />
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">The</p>
+    <h1 class="hero-title">Gentleman's<br>Code</h1>
+    <p class="hero-tagline">Legacy. Loyalty. Power.</p>
+    <div class="divider"><div class="divider-diamond"></div></div>
+    <p class="hero-body">
+      In a world where violence is easy<br>
+      and fear is temporary, real power<br>
+      belongs to the disciplined.
+    </p>
+    <p class="hero-byline">A Novel by John Bento</p>
+    <div class="divider"><div class="divider-diamond"></div></div>
+    <p class="hero-cta">Coming Soon</p>
+  </div>
+</section>
+ 
+<!-- STORY / PROLOGUE -->
+<section class="content-section" id="story">
+  <div class="section-inner">
+    <p class="section-label">The Story</p>
+    <h2 class="section-title">Prologue</h2>
+    <p class="story-text">John August never wanted to be king. He only wanted control.</p>
+    <p class="story-text">Raised by a mother who believed dignity was wealth and silence was strength, John learned early that the loudest men rarely lasted. In a city ruled by impulsive violence and inherited power, he builds something different — an empire founded not on chaos, but on restraint.</p>
+    <p class="story-text">He doesn't shout. He doesn't posture. And he never moves without purpose.</p>
+    <p class="story-text">As rival crews clash for territory and old-world crime families begin circling his growing influence, John discovers a dangerous truth: <em>order is more threatening than brutality.</em> The disciplined man unsettles the reckless. The quiet one reshapes the room.</p>
+    <p class="story-text">But power draws attention.</p>
+    <p class="story-text">When betrayals surface from within, when blood is spilled without permission, and when the shadow of his father's past resurfaces to test his loyalty and legacy, John must decide whether he will inherit the old system — or dismantle it entirely.</p>
+    <p class="story-text">In a world where violence is easy and fear is temporary, John August becomes something far more dangerous: a man who understands that real power is not how loudly you strike — but how precisely.</p>
+    <p class="story-text story-text--italic">
+      <em>Gentleman's Code is a gripping crime saga about legacy, discipline, and the cost of building order in a world that profits from chaos.</em>
+    </p>
+    <div class="divider divider--left"><div class="divider-diamond"></div></div>
+    <p class="story-closing">Some men rule through fear.<br>Others rule because they don't need to.</p>
+  </div>
+</section>
+ 
+<!-- ABOUT -->
+<section class="content-section content-section--dark" id="about">
+  <div class="section-inner">
+    <p class="section-label">The Author</p>
+    <h2 class="section-title">About John Bento</h2>
+    <p class="story-text">
+      John Bento is a writer drawn to stories of power, discipline, and the hidden architecture beneath the world most people see. <em>The Gentleman's Code</em> is his debut novel.
+    </p>
+    <p class="story-text">
+      More details coming soon.
+    </p>
+  </div>
+</section>
+ 
+<!-- UPDATES -->
+<section class="content-section" id="updates">
+  <div class="section-inner">
+    <p class="section-label">News &amp; Updates</p>
+    <h2 class="section-title">Latest</h2>
+    <div class="update-card">
+      <span class="update-date">Coming Soon</span>
+      <p class="update-text">Release date and pre-order details will be announced here. Join the list below to be first to know.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACT -->
+<section class="content-section content-section--dark" id="contact">
+  <div class="section-inner">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title">Contact</h2>
+    <form class="contact-form" onsubmit="handleContact(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p class="form-confirm" id="formConfirm"></p>
+  </div>
+</section>
+ 
+<!-- FOOTER EMAIL BAR -->
+<footer class="footer-bar">
+  <div class="footer-left">
+    <h3>Join the List</h3>
+    <p>Be the first to know when the story unfolds.</p>
+  </div>
+  <form class="footer-form" onsubmit="handleEmailSignup(event)">
+    <input type="email" placeholder="Email Address" required />
+    <button type="submit">Join</button>
+  </form>
+  <div class="footer-social">
+    <a href="#" title="Facebook" aria-label="Facebook">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+    </a>
+    <a href="#" title="Instagram" aria-label="Instagram">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <a href="mailto:contact@johanbento.com" title="Email" aria-label="Email">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+  </div>
+</footer>
+ 
+<script src="main.js"></script>
+</body>
+</html>
